@@ -113,12 +113,53 @@ main {
 .card {
     border-left: 5px solid #F0B429;
     border-top: 1px solid grey;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px grey;
+
 }
 
 .sidebar {
     grid-column: 2/ 3;
     grid-row: 2/3;
+}
+
+.bg-white {
+    background-color: white;
+    color: black;
+    box-shadow: 1px 5px grey;
+    border-radius: 10px;
+        padding: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt:not(:first-of-type) {
+    padding-top: 1rem;
+}
+
+dd {
+    margin-inline-start: 0;
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid grey;
+}
+
+dd:last-of-type {
+    border-bottom: none;
+}
+
+.bg-white > li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    border: 1px solid grey;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.trending_icon {
+    max-width: 50px;
+    grid-row: 1 / 3;
+
 }
