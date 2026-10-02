@@ -13,3 +13,25 @@ aside {
     color: white;
 
 }
+
+header {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.notifications-field{
+    display: flex;
+    gap: 2rem;
+}
+
+.notifications-field > button {
+    min-height: 48px;
+    min-width: minmax(48px, max-content);
+  
+}
