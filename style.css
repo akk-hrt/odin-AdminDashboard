@@ -33,7 +33,14 @@ header {
 .notifications-field > button {
     min-height: 48px;
     min-width: minmax(48px, max-content);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   
+}
+
+.notifications-field > button > img {
+    max-width: 48px;
 }
 
 main {
@@ -53,8 +60,44 @@ main {
     border: 1px dashed red;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
 }
 
+.greeting {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.greeting > img {
+    max-height: 4rem;
+}
+
+.greeting > p {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-header-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.main-header-buttons > button {
+    background-color: #1474A9;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    
+}
 .projects-field {
     border: 1px solid black;
     grid-column: 1 /2;
